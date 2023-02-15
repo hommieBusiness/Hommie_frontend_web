@@ -1,10 +1,15 @@
 import './App.css';
 
-function App() {
+/*
+@name: App
+@description: main function
+*/
+
+const App = () => {
   return (
     <div>
-    </div>
-  );
-}
 
+    </div>
+  )
+}
 export default App;
