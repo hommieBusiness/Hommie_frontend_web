@@ -40,7 +40,12 @@ export const renderHTML = (
     </Fragment>
   );
 };
-
+/* 
+  @Name: navbarLinks
+  @type: Function
+  @author:Aaditya Pal
+  @desc: returns the links for navbar
+*/
 const navbarLinks = (classes, Constants) => {
   return (
     <Fragment>
@@ -67,7 +72,10 @@ const navbarLinks = (classes, Constants) => {
         <p>{Constants.navLinkText6}</p>
       </div>
       <div className={classes["navbar-responsive-item-div"]}>
-        <i className="fa-solid fa-user" style={{ marginRight: "0.4em" ,color:'var(--color-secondary-1)'}}></i>
+        <i
+          className="fa-solid fa-user"
+          style={{ marginRight: "0.4em", color: "var(--color-secondary-1)" }}
+        ></i>
         <p>{Constants.navLinkText7}</p>
       </div>
     </Fragment>
