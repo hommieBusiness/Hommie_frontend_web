@@ -1,190 +1,118 @@
-
-.navbar-root{
-    width:80%;
-    height:5em;
-    background-color:var(--color-primary);
-    margin: 0px auto 0px auto;
-    border-radius: 0px 0px 20px 20px;
-    font-size:15px;
-    position: relative;
-    outline:none;
-    border: none;
-    color:var(--color-secondary-2);
-    
+.navbar-container {
+  position: relative;
+  width: 85%;
+  background: #1a191f;
+  border-radius: 0px 0px 20px 20px;
+  height: 5em;
+  margin: 0px auto 0px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-.navbar-logo-responsive{
-    width: 10em;
-    height: 5em;
-    background-size:contain;
+
+.navbar-logo {
+  width: 10em;
+  height: 5em;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.navbar-items {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  color: var(--color-secondary-2);
+  justify-content: space-around;
+}
+.navbar-toggle {
+  display: none;
+}
+.navbar-hamBurger {
+  font-size: 2em;
+  color: var(--color-secondary-2);
+}
+.navbar-responsive-item {
+  position: fixed;
+  background-color: var(--color-primary);
+  width: 100%;
+  height: calc(100% - 4.9em);
+  margin-left: 100vw;
+  display: flex;
+  color: var(--color-secondary-2);
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: Montserrat-Medium;
+}
+.navbar-responsive-item-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1em;
+  cursor: pointer;
+}
+.navbar-responsive-item-div p {
+  margin-right: 0.5em;
+  text-transform: capitalize;
+}
+@media only screen and (max-width:2000px){
+    .navbar-container{
+        width:80%;
+    }
+}
+@media only screen and (max-width: 1200px) {
+  .navbar-container {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .navbar-container {
+    width: 100%;
+    font-size: 16px;
+    border-radius: 0px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-toggle {
+    display: block;
+    margin: 0px 1em 0px 0px;
+  }
+  .navbar-items {
     display: none;
-}
-.navbar-responsive{
-    display:none;
-}
-.navbar-items{
-    color: var(--color-secondary-2);
-    font-family: Montserrat-Bold;
-    position: relative;
-    width:100%;
-    height:100%;
-    margin:0px auto 0px auto;
-    display: flex;
-    flex-direction: row;
-}
-.navbar-logo{
-    position: relative;
-    width:10em;
-    height:5em;
-    background-size: contain;
-    margin-left:1em;
-}
-.navbar-links{
-    position: relative;
-    width:80%;
-    margin: 0px auto 0px auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-transform: capitalize;
-}
-.navbar-items-div{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.navbar-search{
-    width:12em!important;
-}
-.navbar-items-text-p{
-    margin-right:5px;
-}
-.navbar-items-text-button{
-    background-color: var(--color-secondary-1);
-    padding: 0.5em;
-}
-@media only screen and (max-width:1600px){
-    .navbar-root{
-        font-size:12px;
-        
-    }
-    .navbar-links{
-        width:90%;
-    }
-}
-@media only screen and (max-width:1400px){
-    .navbar-root{
-        width:95%;
-    }
-}
-@media only screen and (max-width:1000px){
-    .navbar-root{
-        border-radius: 0;
-        width:100%;
-        display: flex;
-        flex-direction: column;
-    }
-    .navbar-hamBurger{
-        font-size:2em;
-        margin-right:1em;
-    }
-    .navbar-logo{
-        display: none;
-    }
-    .navbar-links{
-        margin-top:1.5em;
-        height:100%;
-        overflow-x: none;
-        overflow-y: none;
-        background-color: var(--color-primary);
-    }
-    .navbar-items{
-        overflow-x: none;
-        overflow-y: none;
-        display: none;
-        flex-direction: column;
-        height:calc(100vh - 5em);
-        margin-left:50vw;
-        position: fixed;
-        margin-top:5em;
-        transition: display 1000ms ease-in;
-        background-color: var(--color-primary);
-    }
-    .navbar-links{
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        height:100%;
-    }
-    .navbar-logo-responsive{
-        display: block;
-        background-repeat: no-repeat;
-        height:5em;
-    }
-    .navbar-responsive{
-        display:flex;
-        justify-content:space-between;
-        align-items: center;
-    }
-    .navbar-items-div{
-        margin-bottom: 4.5em;
-    }
+  }
+  .navbar-responsive-item {
     
+    margin-left: 60vw;
+    display: none;
+  }
 }
-@media only screen and (min-width:1000px){
-    .navbar-hamBurger{
-        display:none;
-    }
-    .navbar-logo-responsive{
-        display: none;
-    }
-    .navbar-items{
-        width: 100%;
-        height: 100vh;
-        display: flex!important;
-        flex-direction: row;
-
-    }
+@media only screen and (min-width: 1000px) {
+  .navbar-items {
+    display: flex;
+  }
 }
-@media only screen and (max-width:550px){
-    .navbar-items{
-        margin-left: 50vw;
-    }
-    .navbar-search{
-        width:4em;
-    }
+@media only screen and (max-width: 650px) {
+  .navbar-responsive-item {
+    margin-left: 50vw;
+  }
 }
-@media only screen and (max-width:350px) {
-    .navbar-items {
-        margin-left: 35vw;
-    }
-    .navbar-search {
-        width: 3em;
-    }
+@media only screen and (max-width: 450px) {
+  .navbar-responsive-item {
+    margin-left: 40vw;
+  }
+  .navbar-hamBurger {
+    font-size: 1.6em;
+  }
 }
-@media only screen and (max-height:700px){
-    .navbar-items{
-        height:100vh!important;
-    }
-    .navbar-items-div {
-        margin-bottom: 2em;
-    }
+@media only screen and (max-width: 340px) {
+  .navbar-responsive-item {
+    font-size: 14px;
+  }
+  .navbar-logo {
+    width: 8.2em;
+    height: 100%;
+  }
+  .navbar-hamBurger {
+    font-size: 1.6em;
+  }
 }
-@media only screen and (min-height:700px){
-    .navbar-items{
-        height:100%!important;
-    }
-}
-@media only screen and (max-width:290px) {
-    .navbar-root{
-        font-size:10px;
-    }
-    .navbar-items{
-        height:100%!important;
-        margin-left:10em;
-        margin-bottom: 0em;
-        margin-top:5em!important;
-        width:100%;
-    }
-}
-
