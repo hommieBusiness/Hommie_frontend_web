@@ -50,18 +50,35 @@ const navbarLinks = (classes, Constants) => {
   return (
     <Fragment>
       <div className={classes["navbar-responsive-item-div"]}>
+        <i
+          className="fa-solid fa-calendar-days"
+          style={{ marginRight: "0.4em" }}
+        ></i>
         <p>{Constants.navLinkText1}</p>
       </div>
       <div className={classes["navbar-responsive-item-div"]}>
+        <i className="fa-solid fa-bowl-food" style={{ marginRight: "0.4em" }}></i>
         <p>{Constants.navLinkText2}</p>
       </div>
       <div className={classes["navbar-responsive-item-div"]}>
+        <i
+          className="fa-solid fa-cake-candles"
+          style={{ marginRight: "0.4em" }}
+        ></i>
         <p>{Constants.navLinkText3}</p>
       </div>
       <div className={classes["navbar-responsive-item-div"]}>
+        <i
+          className="fa-solid fa-building"
+          style={{ marginRight: "0.4em" }}
+        ></i>
         <p>{Constants.navLinkText4}</p>
       </div>
       <div className={classes["navbar-responsive-item-div"]}>
+        <i
+          className="fa-solid fa-handshake-angle"
+          style={{ marginRight: "0.4em" }}
+        ></i>
         <p>{Constants.navLinkText5}</p>
       </div>
       <div className={classes["navbar-responsive-item-div"]}>
