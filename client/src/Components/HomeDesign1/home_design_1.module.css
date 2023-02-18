@@ -1,0 +1,18 @@
+.design1-root {
+    background-color: red;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.design1-left {
+    display: grid;
+}
+
+.design1-left-top {
+    background-color: yellow;
+}
+
+.design1-left-bottom {
+    background-color: beige;
+}
