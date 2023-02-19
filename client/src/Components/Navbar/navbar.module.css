@@ -42,6 +42,7 @@
   flex-direction: column;
   justify-content: space-around;
   font-family: Montserrat-Medium;
+  z-index: 30;
 }
 .navbar-responsive-item-div {
   display: flex;
